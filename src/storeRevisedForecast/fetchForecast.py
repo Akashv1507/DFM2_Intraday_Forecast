@@ -82,7 +82,5 @@ class RevisedForecastedDemandFetchRepo():
         finally:
             cur.close()
             connection.close()
-            
-        print("retrieval of forecasted demand completed")
         joinedForecastesData: List[Tuple] = [*revisedForecastedData, *revisedForecastedDataR0B]
         return joinedForecastesData

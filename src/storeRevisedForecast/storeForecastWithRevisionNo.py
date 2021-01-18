@@ -54,5 +54,4 @@ class RevisionInsertion():
         finally:
             cur.close()
             connection.close()
-            print("demand forecast with revision no. storage complete")
         return isInsertionSuccess
