@@ -45,7 +45,7 @@ def doIntradayRevision(startTime: dt.datetime, endTime: dt.datetime, configDict 
 
             # do revision in next time blocks from B+3
             revisedForecastData :List[Tuple] = obj_forecastedDemandFetchForRevisionRepo.fetchForecastedDemandForRevision(startTime, endTime, entity, avgBiasError)
-            
+            # print(revisedForecastData)
             # insert revised forecasted demand in db
             isRevisionSuccess = obj_revisedForecastInsertionRepo.insertRevisedDemandForecast(revisedForecastData)
             

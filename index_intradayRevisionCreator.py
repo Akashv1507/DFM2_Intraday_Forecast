@@ -8,7 +8,7 @@ from src.intraDayRevision.intradayRevisionCreator import doIntradayRevision
 configDict=getAppConfigDict()
 
 currTime = dt.datetime.strftime(dt.datetime.now(), '%Y-%m-%d %H:%M:%S')
-# currTime = "2021-01-21 22:40:40"
+# currTime = "2021-01-29 12:10:40"
 parser = argparse.ArgumentParser()
 parser.add_argument('--curr_time', help="Enter Start time in yyyy-mm-dd HH:MM:SS format",
                     default = currTime)
